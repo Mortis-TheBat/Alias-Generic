@@ -1,0 +1,88 @@
+# Pentesting
+alias htb='sudo openvpn /home/you/htb.ovpn'
+alias try='sudo openvpn /home/you/thm.ovpn'
+alias msf='sudo service postgresql start && sudo msfdb init && msfconsole'
+
+# Ping
+alias ping='ping -c 5'
+alias fastping='ping -c 100 -s.2'
+
+# Show open ports
+alias ports='netstat -tulanp'
+
+# Coding
+alias work="cd ~/work/bin && source activate"
+alias jup="work && cd ipython-in-depth && jupyter notebook"
+
+# Directory navigation
+alias cd..='cd ..'
+alias des='cd /home/you/Desktop'
+alias home='cd /home/you'
+
+## Use a long listing format ##
+alias ll='ls -la'
+
+## Show hidden files ##
+alias l.='ls -d .* --color=auto'
+
+## A quick way to get out of the current directory ##
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+
+# Hardware
+alias wifi="sudo service NetworkManager restart"
+
+# Software
+alias apt-get='sudo apt-get'
+
+# Terminal fun
+alias clr='grep --color=auto'
+alias upgrade='sudo parrot-upgrade'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias sha1='openssl sha1'
+alias diff='colordiff'
+alias mount='mount |column -t'
+
+# Handy shortcuts
+alias h='history'
+alias j='jobs -l'
+alias c='clear'
+alias now='date +"%T"'
+alias nowtime=now
+alias nowdate='date +"%d-%m-%Y"'
+
+# Reboot / Halt / Poweroff
+alias reboot='sudo /sbin/reboot'
+alias poweroff='sudo /sbin/poweroff'
+alias shutdown='sudo /sbin/shutdown'
+
+# Aliases management
+alias als='nano ~/.bash_aliases'
+alias gals='kate ~/.bash_aliases'
+
+# Path
+# This line shows the PATH variable in a more readable format.
+# Uncomment it if you want to see your PATH variable expanded to separate lines.
+# alias path='echo -e ${PATH//:/\\n}'
+
+# Update and Upgrade
+alias update='sudo apt-get update && sudo apt-get upgrade'
+alias updatey='sudo apt-get --yes'
+
+# System Info
+alias meminfo='free -m -l -t'
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+alias pscpu='ps auxf | sort -nr -k 3'
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+alias cpuinfo='lscpu'
+alias gpumeminfo='grep -i --color memory /var/log/Xorg.0.log'
+
+alias apt-get="sudo apt-get" 
